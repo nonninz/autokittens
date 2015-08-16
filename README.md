@@ -22,6 +22,6 @@ Credits
 =======
 
 This script is based on the work of 
-(https://www.reddit.com/user/Quizer85)[/u/Quizer85] posted in
-(https://www.reddit.com/r/kittensgame/comments/3g2u3e/autokittens_update_now_with_eludium_crafting_and/)[his thread] on
-(https://www.reddit.com/r/kittensgame/)[/r/kittensgame].
+[/u/Quizer85](https://www.reddit.com/user/Quizer85) posted in
+[his thread](https://www.reddit.com/r/kittensgame/comments/3g2u3e/autokittens_update_now_with_eludium_crafting_and/) on
+[/r/kittensgame](https://www.reddit.com/r/kittensgame/).
