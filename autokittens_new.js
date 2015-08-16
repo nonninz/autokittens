@@ -554,7 +554,7 @@ autoCraft = function () {
     ["minerals",    "slab" , "craftSlab", gamePage.science.get('construction').researched],
     ["coal",        "steel", "craftSteel", gamePage.science.get('construction').researched],
     ["iron",        "plate", "craftPlate", gamePage.science.get('construction').researched],
-    ["titanium",    "alloy", "craftAlloy", gamePage.science.get('construction').researched && (gamePage.resPool.get('steel').value > (gamePage.resPool.get('alloy') * autoOptions.craftOptions.alloySteelRatio))],
+    ["titanium",    "alloy", "craftAlloy", gamePage.science.get('construction').researched && (gamePage.resPool.get('steel').value > (gamePage.resPool.get('alloy').value * autoOptions.craftOptions.alloySteelRatio))],
     ["unobtainium", "eludium", "craftEludium", gamePage.science.get('construction').researched],
     ["culture", "parchment", "craftParchment", gamePage.science.get('construction').researched],
     ["culture", "manuscript", "craftManuscript", gamePage.science.get('construction').researched && (!autoOptions.craftOptions.festivalBuffer || gamePage.resPool.get('parchment').value > 2500 + 25 * autoOptions.craftOptions.manuscriptAmount)],
