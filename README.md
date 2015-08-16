@@ -8,7 +8,7 @@ How to load
 
 Create a bookmarklet with the following code:
 
-`javascript:(function(){var%20d=document,s=d.createElement('script');s.src='https://raw.githubusercontent.com/nonninz/autokittens/master/autokittens.js';d.body.appendChild(s);})();`
+`javascript:(function(){var d=document,s=d.createElement('script');s.src='https://raw.githubusercontent.com/nonninz/autokittens/master/autokittens.js';d.body.appendChild(s);})();`
 
 TODO
 ====
