@@ -609,9 +609,16 @@ autoTrade = function () {
     return;
   }
   var gold = gamePage.resPool.get('gold');
-  if (gamePage.resPool.get(race.buys[0].name).value < race.buys[0].val || gamePage.resPool.get("manpower").value < 50 || gold.value / gold.maxValue < autoOptions.tradeOptions.tradeLimit) {
+  var catpower = gamePage.resPool.get("manpower");
+  if (gamePage.resPool.get(race.buys[0].name).value < race.buys[0].val || catpower.value < 50 || gold.value / gold.maxValue < autoOptions.tradeOptions.tradeLimit) {
     return;
   }
+
+  // Preserve enough catpower to hold a festival if requested
+  if (autoOptions.craftOptions.festivalBuffer && gamePage.calendar.festivalDays == 0 && autoOptions.autoFestival && catpower.value < 1500 + (autoOptions.tradeOptions.tradeCount * 50)) {
+    return;
+  }
+
   var msgFunc = gamePage.msg;
   if (autoOptions.tradeOptions.suppressTradeLog) {
     gamePage.msg = function() {};
